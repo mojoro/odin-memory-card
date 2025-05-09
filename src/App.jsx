@@ -1,35 +1,54 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="page-wrapper">
+        <header>
+          <div className="info">
+            <h1></h1>
+            <h3></h3>
+          </div>
+          <div className="score-container">
+            <p className="score"></p>
+            <p className="score best-score"></p>
+          </div>
+        </header>
+        <main>
+          <a href="">
+            <div className="memory-card">
+              <img src="" alt="" />
+              <p></p>
+            </div>
+          </a>
+          <a href="">
+            <div className="memory-card">
+              <img src="" alt="" />
+              <p></p>
+            </div>
+          </a>
+          <a href="">
+            <div className="memory-card">
+              <img src="" alt="" />
+              <p></p>
+            </div>
+          </a>
+          <a href="">
+            <div className="memory-card">
+              <img src="" alt="" />
+              <p></p>
+            </div>
+          </a>
+          <a href="">
+            <div className="memory-card">
+              <img src="" alt="" />
+              <p></p>
+            </div>
+          </a>
+        </main>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
